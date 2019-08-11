@@ -1,1 +1,1 @@
-import './onsenui.js';
+import './onsenui';
