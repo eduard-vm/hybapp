@@ -22,6 +22,8 @@
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="UIWebViewBounce" value="false" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>

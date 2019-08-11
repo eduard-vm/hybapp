@@ -2,8 +2,8 @@
   <v-ons-page>
     <v-ons-toolbar>
       <div class="center">Home Page</div>
-      <div class="right">
-        <v-ons-toolbar-button icon="ion-navicon, material: md-menu"></v-ons-toolbar-button>
+      <div class="left">
+        <v-ons-toolbar-button icon="md-menu" @click="openSplitterSide" />
       </div>
     </v-ons-toolbar>
     <div class="content">
@@ -26,6 +26,10 @@
 <script>
 export default {
   name: 'home',
+
+  inject: [
+    'openSplitterSide',
+  ],
 
   data() {
     return {
